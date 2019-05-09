@@ -1,6 +1,6 @@
 version: '3'
 services:
-  hk-mysql:
+  hk-mysql-1:
     container_name: hk-mysql
     image: mysql/mysql-server:5.7
     environment:
@@ -10,7 +10,7 @@ services:
     ports:
     - "3306:3306"
     restart: always
-  crud-mysql-vuejs:
+  crud-mysql-vuejs-1:
     IMAGE
     build: .
     ports:
