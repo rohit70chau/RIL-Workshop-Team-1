@@ -1,0 +1,6 @@
+/app/src/main/java/com/hellokoding/springboot/restful/product/Product.java
+/app/src/main/java/com/hellokoding/springboot/restful/product/ProductController.java
+/app/src/main/java/com/hellokoding/springboot/restful/product/ProductService.java
+/app/src/main/java/com/hellokoding/springboot/restful/Application.java
+/app/src/main/java/com/hellokoding/springboot/restful/product/ProductAPI.java
+/app/src/main/java/com/hellokoding/springboot/restful/product/ProductRespository.java

@@ -1,0 +1,6 @@
+com/hellokoding/springboot/restful/product/Product.class
+com/hellokoding/springboot/restful/product/ProductRespository.class
+com/hellokoding/springboot/restful/product/ProductController.class
+com/hellokoding/springboot/restful/product/ProductService.class
+com/hellokoding/springboot/restful/product/ProductAPI.class
+com/hellokoding/springboot/restful/Application.class
