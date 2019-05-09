@@ -3,7 +3,7 @@ node {
    def scannerHome
    stage('Prepare') {
       cleanWs disableDeferredWipeout: true, notFailBuild: true
-      git 'https://github.com/LovesCloud/RIL-Workshop.git'           
+      git 'https://github.com/LovesCloud/RIL-Workshop-Team-1.git'           
       mvnHome = tool 'M3'
       scannerHome = tool 'sonar_scanner';
    }
