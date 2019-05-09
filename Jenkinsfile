@@ -21,7 +21,7 @@ node {
       withSonarQubeEnv('SonarQube') {
         sh "${scannerHome}/bin/sonar-scanner -e -Dsonar.projectName=RIL-Workshop-Team-1 -Dsonar.projectKey=RILWT1 -Dsonar.sources=src -Dsonar.java.binaries=target/"
       }
-   }k
+   }
 
 
    stage('Docker-Build') {
