@@ -3,8 +3,11 @@ node {
    def scannerHome
    stage('Prepare') {
       cleanWs disableDeferredWipeout: true, notFailBuild: true
-      git 'https://github.com/LovesCloud/RIL-Workshop-Team-1.git'           
+      git branch: 'develop', url: 'https://github.com/LovesCloud/RIL-Workshop-Team-1.git' 
+     //git 'https://github.com/LovesCloud/RIL-Workshop-Team-1.git'           
       mvnHome = tool 'M3'
+      def commit = sh(returnStdout: true, script: 'git log -1 --pretty=%B | cat')
+      print commit
       scannerHome = tool 'sonar_scanner';
    }
 
@@ -74,7 +77,9 @@ node {
    stage('Cleanup') {
       cleanWs disableDeferredWipeout: true, notFailBuild: true
    }
+  
    stage ('post-build') {
    build job: 'RIL-W-12'
    }
 }
+
