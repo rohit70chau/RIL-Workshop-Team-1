@@ -74,7 +74,8 @@ node {
    stage('Cleanup') {
       cleanWs disableDeferredWipeout: true, notFailBuild: true
    }
-   stage ('post-build') {
+  /* stage ('post-build') {
    build job: 'RIL-W-11'
    }
+   */
 }
