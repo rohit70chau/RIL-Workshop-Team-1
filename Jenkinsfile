@@ -78,7 +78,6 @@ node {
       cleanWs disableDeferredWipeout: true, notFailBuild: true
       echo "Cleaned Up" 
    }
-  
 }
 
 
