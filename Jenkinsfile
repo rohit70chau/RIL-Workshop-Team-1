@@ -76,6 +76,7 @@ node {
 
    stage('Cleanup') {
       cleanWs disableDeferredWipeout: true, notFailBuild: true
+      echo "Cleaned Up" 
    }
   
    stage ('post-build') {
