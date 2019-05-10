@@ -79,9 +79,6 @@ node {
       echo "Cleaned Up" 
    }
   
-   stage ('post-build') {
-   build job: 'RIL-W-12'
-   }
 }
 
 
