@@ -77,5 +77,6 @@ node {
    stage('Cleanup') {
       cleanWs disableDeferredWipeout: true, notFailBuild: true
       echo "Cleaned Up" 
+      emailext body: 'test body 1', subject: 'test subject 1', to: 'rajni@loves.cloud,rajnikhattarrsinha@gmail.com'
    }
 }
