@@ -77,7 +77,7 @@ node {
    stage('Cleanup') {
       cleanWs disableDeferredWipeout: true, notFailBuild: true
       echo "Cleaned Up" 
-      emailext body: " ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}", to: 'rajni@loves.cloud,rajnikhattarrsinha@gmail.com'
+      emailext body: " ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}", to: 'rajni@loves.cloud,Rohit.chaudhary@ril.com,haris.d.great@gmail.com,Puneet.kucheria@ril.com,Atul.lal@ril.com'
 
    }
 }
